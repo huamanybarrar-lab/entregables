@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKIN NICE</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>SKIN NICE</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="inicio">
+            <h2>El mejor distribuidor de Skincare y K-beauty</h2>
+            <a href="#productos" class="btn-productos">Ver productos</a>
+        </section>
+
+        <section>
+            <h2 id="productos">Nuestros productos</h2>
+
+            <div id="carouselExampleControls" class="carousel slide carrusel-productos" data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img1.jpg" class="d-block w-100" alt="Imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img2.jpg" class="d-block w-100" alt="Imagen 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img3.webp" class="d-block w-100" alt="Imagen 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img4.webp" class="d-block w-100" alt="Imagen 4">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <div class="contenedor-productos">
+                <div class="card">
+                    <div>
+                        <img src="rutina.jpg" alt="Dr. Althea">
+                        <h3>Rutina de skincare</h3>
+                        <p>Kit completo para el cuidado diario</p>
+                    </div>
+                    <div>
+                        <p class="precio">S/ 80.00</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="combo.jpg" alt="Bloqueadores">
+                        <h3>Ofertas de combos</h3>
+                        <p>Combos especiales para tu piel</p>
+                    </div>
+                    <div>
+                        <p class="precio">S/ 90.00</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="serums.jpg" alt="Celimax">
+                        <h3>Sérums y Tratamientos</h3>
+                        <p>Productos con registro sanitario</p>
+                    </div>
+                    <div>
+                        <p class="precio">S/ 70.00</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <img src="tocobo.webp" alt="Tocobo">
+                        <h3>Protectores Solares</h3>
+                        <p>Productos con registro sanitario</p>
+                    </div>
+                    <div>
+                        <p class="precio">S/ 65.00</p>
+                        <button>Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <p>Skin Nice &copy; 2026 - Todos los derechos reservados</p>
+        <p>Teléfono: 992135146</p>
+        <p>Correo: huamanybarrar@gmail.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

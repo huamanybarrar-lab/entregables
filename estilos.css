@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --rosa: #ffb7c5;
+    --vino: #92636f;
+    --celeste: #b7dfff;
+    --blanco: #ffffff;
+    --texto: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--rosa);
+}
+
+header {
+    background-color: var(--vino);
+    padding: 25px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: var(--blanco);
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+nav a:hover {
+    border-bottom-color: var(--blanco);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    color: var(--blanco);
+}
+
+.inicio {
+    text-align: center;
+    background-color: var(--celeste);
+    padding: 50px 30px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    color: var(--texto);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.inicio h2 {
+    font-size: 1.8rem;
+}
+
+.btn-productos {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 20px;
+    background-color: var(--vino);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-productos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#productos {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+    scroll-margin-top: 130px;
+}
+
+.carrusel-productos {
+    max-width: 850px;
+    margin: 0 auto 45px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 5px solid var(--blanco);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.carrusel-productos img {
+    height: 420px;
+    object-fit: cover;
+}
+
+.carrusel-productos .carousel-control-prev,
+.carrusel-productos .carousel-control-next {
+    width: 55px;
+    opacity: 1;
+}
+
+.carrusel-productos .carousel-control-prev-icon,
+.carrusel-productos .carousel-control-next-icon {
+    background-color: var(--vino);
+    border-radius: 50%;
+    padding: 20px;
+    background-size: 50%;
+    transition: transform 0.3s;
+}
+
+.carrusel-productos .carousel-control-prev-icon:hover,
+.carrusel-productos .carousel-control-next-icon:hover {
+    transform: scale(1.15);
+}
+
+.carrusel-productos .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--blanco);
+}
+
+.contenedor-productos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background-color: var(--blanco);
+    color: var(--texto);
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    font-size: 1.05rem;
+    color: var(--vino);
+    margin-bottom: 6px;
+}
+
+.card p {
+    font-size: 0.85rem;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+.card .precio {
+    font-weight: bold;
+    color: var(--vino);
+    font-size: 1.1rem;
+}
+
+.card button {
+    background-color: var(--vino);
+    color: var(--blanco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: auto;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #6d4753;
+}
+
+footer {
+    background-color: var(--vino);
+    color: var(--blanco);
+    text-align: center;
+    padding: 25px 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .carrusel-productos img {
+        height: 250px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
